@@ -22,13 +22,11 @@ function App() {
     setInput("");
   };
 
-  // Delete Todo
   const deleteTodo = (index) => {
     const newTodos = todos.filter((_, i) => i !== index);
     setTodos(newTodos);
   };
 
-  // Edit Todo
   const editTodo = (index) => {
     setInput(todos[index]);
     setEditIndex(index);
